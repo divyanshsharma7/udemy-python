@@ -44,11 +44,17 @@ class CSLinkedlist:
     
     def insert(self,index,value):
         new_node=Node(value)
-        temp_node=self.head
-        for _ in range(index-1):
-            temp_node=temp_node.next
-        new_node.next=temp_node.next
-        temp_node.next=new_node
+        if index ==0:
+
+            new_node.next=self.head
+            self.head=new_node
+            self.tail.next=new_node
+        else:
+            temp_node=self.head
+            for _ in range(index-1):
+                temp_node=temp_node.next
+            new_node.next=temp_node.next
+            temp_node.next=new_node
         self.length+=1
     
 
@@ -61,7 +67,7 @@ print(obj)
 obj.prepend(10)
 print("Adding element at first: ",obj)
 
-obj.insert(3,60)
+obj.insert(0,60)
 print("After inserting elemnet: ",obj)
 
 
