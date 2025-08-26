@@ -38,7 +38,7 @@ class CSlinkedlist:
                 break
             result += ' -> '
         return result
-
+ 
 
 obj=CSlinkedlist()
 print(obj.append(20))
