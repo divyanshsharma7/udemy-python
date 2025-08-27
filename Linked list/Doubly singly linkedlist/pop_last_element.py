@@ -43,12 +43,13 @@ class CSlinkedlist:
  
 
 obj=CSlinkedlist()
-print(obj.append(20))
-print(obj.append(30))
-print(obj.append(40))
-print(obj.pop_last())
+obj.append(10)
+obj.append(20)
+obj.append(30)
+print(obj)
 
-
+obj.pop_last()
+print(obj)
         
         
         
