@@ -34,6 +34,8 @@ class CSlinkedlist:
         self.length += 1
 
     def delete_all(self):
+        if self.length==0:
+            return
         self.tail.next=None
         self.head=None
         self.tail=None
