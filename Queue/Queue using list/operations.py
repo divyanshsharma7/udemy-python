@@ -20,6 +20,12 @@ class Queue:
             return "There is not any element in the queue"
         else:
             return self.items.pop(0)
+        
+    def peek(self):
+        if self.isEmpty():
+            return "There is not any element in this queue"
+        else:
+            return self.items[0]
 
     
 
