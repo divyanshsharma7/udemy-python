@@ -26,6 +26,9 @@ class Queue:
             return "There is not any element in this queue"
         else:
             return self.items[0]
+        
+    def delete(self):
+        self.items=None
 
     
 
