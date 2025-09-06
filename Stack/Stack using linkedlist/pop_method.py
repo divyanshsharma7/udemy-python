@@ -30,4 +30,5 @@ obj.push(30)
 print(obj)
 obj.pop()
 print(obj.pop().value)
-        
+
+
