@@ -4,4 +4,4 @@ def factorial(n):
     else:
         return n* factorial(n-1)      
 
-print(factorial(5)) 
+print(factorial(5)) #it will show the factorail of 5 = 120
