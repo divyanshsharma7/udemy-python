@@ -18,3 +18,25 @@ def preorder_traversal(rootNode):
     preorder_traversal(rootNode.rightChild)
 
 preorder_traversal(obj)
+
+
+# class Treenode:
+#     def __init__(self,data):
+#         self.data=data
+#         self.leftChild=None
+#         self.rightChild=None
+
+# obj=Treenode("Drinks")
+# leftChild=Treenode("Hot")
+# rightChild=Treenode("Cold")
+# obj.leftChild=leftChild
+# obj.rightChild=rightChild
+
+# def preorder_traversal(rootNode):
+#     if not rootNode:
+#         return
+#     print(rootNode.data)
+#     preorder_traversal(rootNode.leftChild)
+#     preorder_traversal(rootNode.rightChild)
+
+# preorder_traversal(obj)
