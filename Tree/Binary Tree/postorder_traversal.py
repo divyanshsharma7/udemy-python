@@ -6,6 +6,10 @@ class Treenode:
 
 obj=Treenode("Drinks")
 leftChild=Treenode("Hot")
+tea=Treenode("Tea")
+coffee=Treenode("Coffee")
+leftChild.leftChild=tea
+leftChild.rightChild=coffee 
 rightChild=Treenode("Cold")
 obj.leftChild=leftChild
 obj.rightChild=rightChild
